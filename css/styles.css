@@ -1,0 +1,162 @@
+* {
+  font-family: 'Assistant', sans-serif;
+}
+
+body {
+  font-size:18px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'oswald', sans-serif;
+}
+
+/* Header Styles */
+header {
+  display:flex;
+}
+
+.logo {
+  flex:1;
+}
+
+.logoImage img {
+  width:100px;
+}
+
+.name {
+  flex-grow:8;
+  text-align:center;
+}
+/* Nav */
+nav {
+  position:relative;
+  flex:1;
+}
+
+.navButton {
+
+  text-align:right;
+}
+
+nav ul.menu {
+  margin:0;
+  padding:0;
+  list-style:none;
+  display:none;
+  position:absolute;
+  right:0px;
+  text-align:right;
+}
+
+nav:hover ul {
+  display:block;
+}
+/* Link styles */
+a:link {
+  text-decoration: none;
+}
+
+a:visited {
+  text-decoration: none;
+}
+
+
+/* end of Header styles */
+
+/*  Main content style */
+main {
+  min-height:200px;
+  /* border:1px solid black; */
+}
+
+.profileImage {
+  text-align:center;
+}
+.profileImage img {
+  width:80%;
+  border-radius: 50%;
+}
+/* styles for forms */
+span.formLabel {
+  display:block;
+}
+
+input[type=text] {
+  width:100%;
+  font-size:1rem;
+}
+
+.radioContainer, .buttonContainer {
+  display:flex;
+}
+
+.buttonContainer {
+  text-align:center;
+}
+
+.twoColumn {
+  flex:1;
+}
+
+textarea {
+  width:100%;
+  height:6rem;
+  font-size:1rem;
+}
+
+input[type=submit] {
+  font-size:1rem;
+}
+
+/* end of styles for forms */
+
+
+
+
+/* end of Main content style */
+
+/* footer styles */
+footer {
+  text-align:center;
+  /* background-image:url('../images/10xgrid.png'); */
+}
+
+.socialMedia i {
+  padding: 0 .5rem;
+}
+
+
+/* end of Footer styles */
+
+
+
+@media screen and (min-width: 800px) {
+  section {
+    display:flex;
+  }
+  .profileImage {
+    flex:1;
+    text-align:left;
+  }
+  .profileImage img {
+    width:90%;
+  }
+  .aboutMe {
+    flex:1;
+  }
+
+  footer {
+    display:flex;
+  }
+  .copy, .socialMedia, .contact {
+    flex:1;
+  }
+  .copy {
+    text-align:left;
+  }
+  .contact {
+    text-align:right;
+  }
+
+
+}
